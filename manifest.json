@@ -1,0 +1,13 @@
+{
+  "name": "Tab Herder",
+  "description": "Bring order to tab chaos",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting", "tabs"],
+  "action": { "default_popup": "popup.html" },
+  "icons": {},
+  "options_page": "options.html"
+}
