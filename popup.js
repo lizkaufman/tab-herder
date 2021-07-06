@@ -13,23 +13,24 @@ groupTabsButton.addEventListener("click", async () => {
     return { id: tab.id, baseUrl: baseUrlMatch[1] };
   });
 
-  const groupedTabIds = ungroupedTabInfo
-    .reduce(
-      (acc, cur) => {
-        if (cur.baseUrl === null) {
-          return { ...acc, 0: [...acc["0"], cur.id] };
-        }
+  const groupedTabIds = ungroupedTabInfo.reduce(
+    (acc, cur) => {
+      if (cur.baseUrl === null) {
+        return { ...acc, 0: [...acc["0"], cur.id] };
+      }
 
-        if (Object.keys(acc).includes(cur.baseUrl)) {
-          return { ...acc, [cur.baseUrl]: [...acc[cur.baseUrl], cur.id] };
-        }
+      if (Object.keys(acc).includes(cur.baseUrl)) {
+        return { ...acc, [cur.baseUrl]: [...acc[cur.baseUrl], cur.id] };
+      }
 
-        return { ...acc, [cur.baseUrl]: [cur.id] };
-      },
-      { 0: [] }
-    )
-    .sort();
-  console.log(groupedTabIds);
+      return { ...acc, [cur.baseUrl]: [cur.id] };
+    },
+    { 0: [] }
+  );
+
+  Object.values(groupedTabIds).forEach((tabIdList) => {
+    tabIdList.forEach((tabId) => {
+      chrome.tabs.move(tabId, { index: -1 });
+    });
+  });
 });
-
-// Tab object keys: active,audible,autoDiscardable,discarded,favIconUrl,groupId,height,highlighted,id,incognito,index,mutedInfo,pinned,selected,status,title,url,width,windowId
