@@ -4,7 +4,7 @@
 
 I created this small Google Chrome extension to herd a jumble of different tabs into logical order at the touch of a button.
 
-I was inspired by the fact that I and my colleagues often have loads of tabs flying around, and it's often hard to remember what you have open and where. I wanted a way to instantly bring some order to the tab chaos by grouping similar tabs.
+I was inspired by the fact that I and my colleagues often have loads of tabs flying around, and it's hard to remember what you have open and where. I wanted a way to instantly bring some order to the tab chaos by grouping similar tabs.
 
 I also wanted a small project to hack away at in the evenings when my brain is too tired to work on the larger personal projects I have on the go. I've been curious about how to make browser extensions for a while as well, so it's been fun to start grappling with the Chrome APIs. I know there are probably loads of tab management apps out there, but I wanted to make one from the ground up without a tutorial as a learning experience. :)
 
