@@ -16,9 +16,9 @@ I've achieved my goal for MVP functionality, but ideas are popping into my head 
 
 ## Installation
 
-Chrome extensions web store link TBC once I publish!
+Chrome web store link TBC - it's currently awaiting review. Once it's published, it'll be free to install from there.
 
-For now, to install in developer mode:
+In the meantime, to install in developer mode:
 
 - Clone down the repo into a directory on your computer.
 - Open Chrome and navigate to [chrome://extensions/](chrome://extensions/).

@@ -1,12 +1,12 @@
 {
   "name": "Tab Herder",
-  "description": "Bring order to tab chaos",
-  "version": "1.0",
+  "description": "Bring order to tab chaos by grouping similar tabs",
+  "version": "1.0.0",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["storage", "activeTab", "scripting", "tabs"],
+  "permissions": ["tabs"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
