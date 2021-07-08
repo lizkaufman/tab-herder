@@ -16,17 +16,7 @@ I've achieved my goal for MVP functionality, but ideas are popping into my head 
 
 ## Installation
 
-Chrome web store link TBC - it's currently awaiting review. Once it's published, it'll be free to install from there.
-
-In the meantime, to install in developer mode:
-
-- Clone down the repo into a directory on your computer.
-- Open Chrome and navigate to [chrome://extensions/](chrome://extensions/).
-- Turn on developer mode in the top right corner.
-- Click "Load unpacked" button in top left corner.
-- Select the directory where you've saved this repo's files.
-
-This will then add Tab Herder into your extensions, and you can use it just like you would any other extension.
+Install Tab Herder via the Chrome Web Store page [here](https://chrome.google.com/webstore/detail/tab-herder/ledgjjeofgkfkoieoahlfdpobdoaakfh/overview).
 
 ## Features
 
